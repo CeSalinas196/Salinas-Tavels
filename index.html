@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Salinas Travels</title>
+</head>
+
+<body>
+    <header class="container-fluid" id="encabezado">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-luggage" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                            <path d="M9 6v-1a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v1" />
+                            <path d="M6 10h12" />
+                            <path d="M6 16h12" />
+                            <path d="M9 20v1" />
+                            <path d="M15 20v1" />
+                        </svg> </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Destinos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ofertas</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categorías
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Playa</a></li>
+                                    <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                    <li><a class="dropdown-item" href="#">Cultura</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Todos los destinos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar destinos"
+                                aria-label="Search">
+                            <button class="btn btn-light" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- CARRUSEL DE IMÁGENES-->
+        <div id="Carouselimg" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Carouselimg" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1: Descubre Roatán"></button>
+                <button type="button" data-bs-target="#Carouselimg" data-bs-slide-to="1"
+                    aria-label="Slide 2: Explora Tela"></button>
+                <button type="button" data-bs-target="#Carouselimg" data-bs-slide-to="2"
+                    aria-label="Slide 3: Disfruta Cayos Cochinos"></button>
+                <button type="button" data-bs-target="#Carouselimg" data-bs-slide-to="3"
+                    aria-label="Slide 4: Explora Copán Ruinas"></button>
+                <button type="button" data-bs-target="#Carouselimg" data-bs-slide-to="4"
+                    aria-label="Slide 5: Visita Lago de Yojoa"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="assets/img/Roatan.jpg" class="d-block w-100" alt="Roatan">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Descubre Roatán</h5>
+                        <p>Explora las maravillas de la isla de Roatán con nuestras increíbles imágenes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/Tela.jpg" class="d-block w-100" alt="Tela">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Explora Tela</h5>
+                        <p>Descubre la belleza de la ciudad costera de Tela a través de nuestras imágenes exclusivas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/cayos-cochinos.jpg" class="d-block w-100" alt="Cayos Cochinos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Explora Cayos Cochinos</h5>
+                        <p>Descubre una nueva aventura visitando los Cayos Cochinos.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/copan-ruinas.jpg" class="d-block w-100" alt="Copan Ruinas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Explora Copan Ruinas</h5>
+                        <p>Viaja al pasado dentro de las Ruinas de Copan
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="assets/img/lago-de-yojoa.jpg" class="d-block w-100" alt="Lago de Yojoa">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Explora El Lago de Yojoa</h5>
+                        <p>Disfruta de un buen almuerzo con la vista incomparable del Lago de Yojoa
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carouselimg" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carouselimg" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+    <hr>
+    <article class="mt-4">
+        <div class="card-group">
+            <!-- Card para Roatán -->
+            <div class="card">
+                <img src="assets/img/Roatan.jpg" class="card-img-top" alt="Roatán">
+                <div class="card-body">
+                    <h5 class="card-title">Roatán</h5>
+                    <p class="card-text">Descubre la hermosa isla de Roatán, situada en el Mar Caribe. Roatán es
+                        conocida por sus playas de arena blanca, aguas cristalinas y vibrante vida submarina. Ideal para
+                        el buceo, snorkel y relajación en un entorno tropical.</p>
+                    <p class="card-text"><small class="text-body-secondary">Oferta $55 por persona 3 dias 2
+                            noches</small>
+                    <p class="card-text"><small class="text-body-secondary">Click para ver mas</small>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card para Cayos Cochinos -->
+            <div class="card">
+                <img src="assets/img/cayos-cochinos.jpg" class="card-img-top" alt="Cayos Cochinos">
+                <div class="card-body">
+                    <h5 class="card-title">Cayos Cochinos</h5>
+                    <p class="card-text">Explora la belleza natural de los Cayos Cochinos, un conjunto de pequeñas islas
+                        en el Caribe hondureño. Este paraíso ofrece aguas turquesas, arrecifes de coral prístinos y una
+                        experiencia única de contacto con la naturaleza.</p>
+                        <p class="card-text"><small class="text-body-secondary">Oferta $30 por persona 3 dias 2
+                            noches</small>
+                    <p class="card-text"><small class="text-body-secondary">Click para ver mas</small>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card para Tela -->
+            <div class="card">
+                <img src="assets/img/Tela.jpg" class="card-img-top" alt="Tela">
+                <div class="card-body">
+                    <h5 class="card-title">Tela</h5>
+                    <p class="card-text">Sumérgete en la belleza costera de Tela, una ciudad hondureña frente al Mar
+                        Caribe. Tela ofrece playas doradas, paisajes tropicales y una rica historia cultural. Explora
+                        sus encantadores rincones y disfruta de la hospitalidad local.</p>
+                        <p class="card-text"><small class="text-body-secondary">Oferta $35 por persona 3 dias 2
+                            noches</small>
+                    <p class="card-text"><small class="text-body-secondary">Click para ver mas</small>
+                </div>
+            </div>
+
+            <!-- Card para Copán Ruinas -->
+            <div class="card">
+                <img src="assets/img/copan-ruinas.jpg" class="card-img-top" alt="Copán Ruinas">
+                <div class="card-body">
+                    <h5 class="card-title">Copán Ruinas</h5>
+                    <p class="card-text">Viaja al pasado explorando las Ruinas de Copán, un importante sitio
+                        arqueológico de la civilización maya en Honduras. Admira las impresionantes estructuras, estelas
+                        y altares que revelan la grandeza de esta antigua ciudad.</p>
+                        <p class="card-text"><small class="text-body-secondary">Oferta $45 por persona 3 dias 2
+                            noches</small>
+                    <p class="card-text"><small class="text-body-secondary">Click para ver mas</small>
+                </div>
+            </div>
+
+            <!-- Card para Lago de Yojoa -->
+            <div class="card">
+                <img src="assets/img/lago-de-yojoa.jpg" class="card-img-top" alt="Lago de Yojoa">
+                <div class="card-body">
+                    <h5 class="card-title">Lago de Yojoa</h5>
+                    <p class="card-text">Disfruta de la serenidad junto al Lago de Yojoa, el lago más grande de
+                        Honduras. Rodeado de exuberante vegetación, el lago ofrece un escenario tranquilo para
+                        actividades al aire libre, observación de aves y experiencias gastronómicas únicas.</p>
+                        <p class="card-text"><small class="text-body-secondary">Oferta $20 por persona 3 dias 2
+                            noches</small>
+                    <p class="card-text"><small class="text-body-secondary">Click para ver mas</small>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    </div>
+    </article>
+    <hr>
+    <section class="container mt-5" id="contact">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mx-auto">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="state" class="form-label">Departamento</label>
+                        <input type="text" class="form-control" id="state">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="city" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="city">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 bg-social">
+
+                <ul class="list-group list-group-horizontal d-flex justify-content-center list-social">
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                        </svg>
+                    </li>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </li>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
+                        </svg>
+                    </li>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                        </svg>
+                    </li>
+                    <li class="list-group-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            <path d="M16.5 7.5l0 .01" />
+                        </svg>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container informacion mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h4>Acerca de Nosotros</h4>
+                        </li>
+                        <li class="list-group-item">Nuestra Historia</li>
+                        <li class="list-group-item">Solicitudes De Empleos</li>
+                        <li class="list-group-item">Opiniones</li>
+                        <li class="list-group-item">Album de fotos</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6 text-center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h4>Servicio al Cliente</h4>
+                        </li>
+                        <li class="list-group-item">Quejas y Reclamos</li>
+                        <li class="list-group-item">Terminos y Condiciones</li>
+                        <li class="list-group-item">Politica de Privacidad</li>
+                        <li class="list-group-item">Chatear con un agente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>
